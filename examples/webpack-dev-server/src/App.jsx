@@ -6,7 +6,7 @@ import { FunctionNamed } from './FunctionNamed';
 
 const LazyComponent = React.lazy(() => import('./LazyComponent'));
 
-function App() {
+export function App() {
   return (
     <div>
       <ClassDefault />
@@ -19,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

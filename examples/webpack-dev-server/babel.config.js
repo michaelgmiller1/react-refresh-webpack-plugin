@@ -4,6 +4,6 @@ module.exports = (api) => {
   return {
     presets: ['@babel/preset-env', '@babel/preset-react'],
     // Applies the react-refresh Babel plugin on non-production modes only
-    ...(!api.env('production') && { plugins: ['react-refresh/babel'] }),
+    ...(!api.env('production') && { plugins: ['react-refresh/babel','@babel/plugin-transform-modules-commonjs', '@babel/plugin-transform-runtime'] }),
   };
 };
